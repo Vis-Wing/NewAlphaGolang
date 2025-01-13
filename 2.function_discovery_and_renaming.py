@@ -341,7 +341,6 @@ def renamer_init():
         parse_pcln_2_func = parse_pcln_2()
         while not renamed:
             pcln = parse_pcln_2_func(start_ea)
-            print("pcln: ",pcln)
             if pcln is None:
                 break
             renamed = rename_func(pcln)     
